@@ -19,14 +19,14 @@ $(document).ready(function () {
                 $('tbody').html("");
                 $.each(response.student, function(key, item){
                     $('tbody').append('<tr>\
-                                <td>'+item.id+'</td>\
-                                <td><img src="http://localhost:8000/upload/'+item.image+'" width="110px" height="150px"></td>\
-                                <td>'+item.first_name+'</td>\
-                                <td>'+item.last_name+'</td>\
-                                <td>'+item.course+'</td>\
-                                <td>'+item.phone+'</td>\
-                                <td><button type="button" value="'+item.id+'"class="edit_student_btn btn btn-success btn-sm">Edit</button></td>\
-                                <td><button type="button" value="'+item.id+'"class="delete_btn btn btn-danger btn-sm">Delete</button></td>\
+                                <td class="text-center">'+item.id+'</td>\
+                                <td class="text-center"><img src="http://localhost:8000/upload/'+item.image+'"  class="rounded-circle" width="80px" height="80px"></td>\
+                                <td class="text-center">'+item.first_name+'</td>\
+                                <td class="text-center">'+item.last_name+'</td>\
+                                <td class="text-center">'+item.course+'</td>\
+                                <td class="text-center">'+item.phone+'</td>\
+                                <td class="text-center"><button type="button" value="'+item.id+'"class="edit_student_btn btn btn-success btn-sm">Edit</button></td>\
+                                <td class="text-center"><button type="button" value="'+item.id+'"class="delete_btn btn btn-danger btn-sm">Delete</button></td>\
                             </tr>');
                 });
             }

@@ -18,11 +18,11 @@
                     <ul class="alert alert-warning d-none" id="save_errorList"></ul>
                     <div class="row">
                         <div class="col-lg">
-                            <label for="fname">FirstName</label>
+                            <label for="fname">Firstname</label>
                             <input type="text" name="fname" class="form-control" required>
                         </div>
                         <div class="col-lg">
-                            <label for="lname">LastName</label>
+                            <label for="lname">Lastname</label>
                             <input type="text" name="lname" class="form-control" required>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <input type="file" name="image" class="form-control" required>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer text-center">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" id="add_student_btn" class="btn btn-primary">Save Data</button>
                 </div>
@@ -67,11 +67,11 @@
                     <ul class="alert alert-warning d-none" id="update_errorList"></ul>
                     <div class="row">
                         <div class="col-lg">
-                            <label for="fname">FirstName</label>
+                            <label for="fname">Firstname</label>
                             <input type="text" name="fname" id="edit_fname" class="form-control" required>
                         </div>
                         <div class="col-lg">
-                            <label for="lname">LastName</label>
+                            <label for="lname">Lastname</label>
                             <input type="text" name="lname" id="edit_lname"class="form-control" required>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <input type="file" name="image" class="form-control" required>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer text-center">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" id="edit_student_btn" class="btn btn-primary">Update</button>
                 </div>
@@ -138,12 +138,12 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Image</th>
-                                    <th>FirstName</th>
-                                    <th>LastName</th>
-                                    <th>Course</th>
-                                    <th>Phone</th>
+                                    <th class="text-center">Id</th>
+                                    <th class="text-center">Image</th>
+                                    <th class="text-center">Firstname</th>
+                                    <th class="text-center">Lastname</th>
+                                    <th class="text-center">Course</th>
+                                    <th class="text-center">Phone</th>
                                 </tr>
                             </thead>
                             <tbody>
