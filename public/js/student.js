@@ -20,7 +20,7 @@ $(document).ready(function () {
                 $.each(response.student, function(key, item){
                     $('tbody').append('<tr>\
                                 <td class="text-center">'+item.id+'</td>\
-                                <td class="text-center"><img src="http://localhost:8000/upload/'+item.image+'"  class="rounded-circle" width="80px" height="80px"></td>\
+                                <td class="text-center"><img src="https://library.makutheexplorer.com/upload/'+item.image+'"  class="rounded-circle" width="80px" height="80px"></td>\
                                 <td class="text-center">'+item.first_name+'</td>\
                                 <td class="text-center">'+item.last_name+'</td>\
                                 <td class="text-center">'+item.course+'</td>\
