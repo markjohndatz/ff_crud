@@ -23,6 +23,12 @@
                     Student
                     <div class="sb-sidenav-collapse-arrow"></div>
                 </a>
+                <a class="nav-link" href="users">
+                    <div class="sb-nav-link-icon"><i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    Users
+                    <div class="sb-sidenav-collapse-arrow"></div>
+                </a>
             </div>
         </div>
     </nav>

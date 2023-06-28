@@ -22,6 +22,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Route::match(['post', 'get'], '/update-student/{id}', [App\Http\Controllers\Admin\StudentController::class, 'update']);
 // Route::match(['post', 'get'], '/delete-student/{id}', [App\Http\Controllers\Admin\StudentController::class, 'destroy']);
 
+
+
+
 Route::post('/student', [App\Http\Controllers\Admin\StudentController::class, 'store']);
 Route::get('/student', [App\Http\Controllers\Admin\StudentController::class, 'fetchstudent']);
 Route::get('/student/{id}', [App\Http\Controllers\Admin\StudentController::class, 'edit']);
@@ -39,11 +42,8 @@ Route::prefix('admin')->middleware(['auth' , 'isAdmin'])->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index']);
     Route::get('/books', [App\Http\Controllers\Admin\BooksController::class, 'index']);
     Route::get('/student', [App\Http\Controllers\Admin\StudentController::class, 'index']);
-
-    // Route::match(['post', 'get'], '/student', [App\Http\Controllers\Admin\StudentController::class, 'index']);
-
+    Route::get('/users', [App\Http\Controllers\Admin\UserController::class, 'index']);
 
 
-
-    
 });
+
